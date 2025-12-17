@@ -1,0 +1,16 @@
+{
+  "name": "bankassist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "npx tailwindcss -i ./assets/css/input.css -o ./assets/css/style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "tailwindcss": "^4.1.18"
+  }
+}
