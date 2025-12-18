@@ -23,7 +23,7 @@ $database = "bankassist";
 5. Start Apache & MySQL and open:http://localhost/bankAssist
 
 User guide:
-
+Customers log in from login page while staff&admin log in from staff_login.php
 
 Default account for admin with username: admin and password: admin123
 An admin can create a staff and give them their password which can be changed anytime afterwards.
