@@ -1,3 +1,5 @@
+<!-- AI use(17/12/2025): Deepseek for beautification -->
+
 <?php
 // includes/header.php
 if (!isset($pageTitle)) $pageTitle = 'BankAssist';
