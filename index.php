@@ -1,4 +1,4 @@
-//AI use: deepsee
+<!-- AI use(17/12/2025): Deepseek to beautify the landing page -->
 
 <?php
 require_once 'includes/functions.php';
