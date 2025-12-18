@@ -1,0 +1,99 @@
+#main-content {
+    margin-left: 300px; 
+    padding: 40px;
+}
+
+#all_recipes{
+    text-align: center;
+  margin-top: 40 px;
+
+
+}
+h3{font-family: 'Playfair Display', serif;
+  color: #8b2f1b;
+  font-size: 30px;}
+  
+
+
+.recipe_cards{
+     display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+}
+.recipes{
+     border-radius: 10px;
+            overflow: hidden;
+            background: white;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+}
+.card-content {
+            padding: 20px;
+            z-index: 1;
+            position: relative;
+        }
+        
+.card_headings{
+            color: #2c3e50;
+            font-size: 18px;
+            margin-bottom: 10px;
+            font-weight: 600;
+              display: block;
+
+
+}
+.card_body{
+    color: #7f8c8d;
+            font-size: 14px;
+            margin-bottom: 15px;
+            line-height: 1.5;
+             display: block;
+
+}
+.favorite-btn {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: rgba(255, 255, 255, 0.9);
+            border: none;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            color: #e74c3c;
+            font-size: 18px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+            z-index: 10;
+        }
+        
+        .favorite-btn:hover {
+            background: white;
+            transform: scale(1.1);
+        }
+section img{
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+   display: block;
+}
+.card_headings, .card_body {
+    background-color: rgba(255,255,255,0.9) ;
+    padding: 5px ;
+    border-radius: 3px ;
+}
+
+
+        
+        
+.recipe-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    
+}
+     

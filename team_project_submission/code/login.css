@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+  --cream: #fdfbf7;
+  --chocolate: #3e2418;
+  --gold: #f8a647;
+  --burgundy: #a54343;
+  --card-shadow: 0 20px 40px rgba(15,10,8,0.06);
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: var(--cream);
+  color: var(--chocolate);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.page {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.left-column {
+  width: 60%;
+  min-width: 400px;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0;
+  z-index: 2;
+}
+
+
+.photo-stack {
+  width: 90vh; 
+  height: 90vh;
+  max-width: 800px;
+  max-height: 800px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(12,9,8,0.08);
+  position: relative;
+}
+
+.photo-stack .photo-main {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.right-area {
+  width: 50%; 
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 200px 5% 200px 8%;
+  z-index: 2;
+  position: relative;
+}
+
+
+.decor {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.burgundy-sweep {
+  position: absolute;
+  right: -15%;
+  top: -10%;
+  width: 450%;
+  height: 300%;
+  background: linear-gradient(180deg, var(--burgundy), #b55959 80%);
+  clip-path: ellipse(70% 60% at 18% 20%);
+  opacity: 0.95;
+  filter: blur(0.5px);
+  z-index: 1;
+}
+
+
+.right-area {
+  width: 58%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end; 
+  padding: 300px 10% 200px 5%; 
+  z-index: 2;
+  position: relative;
+}
+
+
+
+.login-card h1 {
+  font-size: 28px;
+  margin-bottom: 24px;
+  color: var(--chocolate);
+  letter-spacing: -0.6px;
+  font-weight: 700;
+  margin-top: 0;
+  text-align: center;
+}
+
+.field {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.field input {
+  width: 100%;
+  padding: 16px 18px;
+  border-radius: 12px;
+  border: 1px solid rgba(10,10,10,0.08);
+  background: #f8f8f8;
+  font-size: 15px;
+  outline: none;
+  transition: all 0.18s ease;
+  color: var(--chocolate);
+  font-family: "Poppins", sans-serif;
+}
+
+.field input:focus {
+  border-color: var(--gold);
+  background: #fff;
+  box-shadow: 0 6px 20px rgba(248,166,71,0.15);
+}
+
+.field input::placeholder {
+  color: #8a7569;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 16px;
+  border-radius: 12px;
+  border: none;
+  background: var(--burgundy);
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(165, 67, 67, 0.25);
+  background: #943a3a;
+}
+
+
+.login-link {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #6b584b;
+  text-align: center;
+}
+
+.login-link a {
+  color: var(--gold);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+@keyframes cardEnter {
+  from {
+    transform: translateY(20px) scale(0.995);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+
+@keyframes cardEnter {
+  from {
+    transform: translateY(20px) scale(0.995);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+@media (max-width: 1100px) {
+  .left-column {
+    width: 46%;
+    min-width: 300px;
+  }
+  .right-area {
+    padding: 150px 6% 60px 6%;
+  }
+  .photo-stack {
+    width: 500px;
+    height: 500px;
+  }
+  .burgundy-sweep {
+    right: -10%; 
+  }
+}
+
+@media (max-width: 900px) {
+  .left-column {
+    display: none;
+  }
+  .burgundy-sweep {
+    display: none;
+  }
+  .right-area {
+    width: 100%;
+    padding: 100px 6% 60px;
+  }
+  .login-card {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 0%;
+  }
+}
