@@ -1,10 +1,10 @@
 <?php
 // includes/db_connect.php
 
-$host = 'sql100.infinityfree.com';
-$db_name = 'if0_40705682_bankassist';
-$username = 'if0_40705682';
-$password = 'KA180LrHYBE9xQo';
+$host = 'localhost';
+$db_name = 'bankassist';
+$username = 'root';
+$password = '';
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$db_name;charset=utf8", $username, $password);
